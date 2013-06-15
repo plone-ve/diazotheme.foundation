@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <five:registerPackage package="."/>
+
+  <plone:static directory="theme" name="foundation" type="theme" />
+  <plone:static directory="starter" name="foundation-starter" type="theme" />
+  <!--
+  <plone:static directory="foundstyles/bladesofsteel" 
+                name="foundstyles-bladesofsteel" type="theme" />
+  <plone:static directory="foundstyles/coffeenmilk" 
+                name="foundstyles-coffeenmilk" type="theme" />
+  <plone:static directory="foundstyles/evergreen" 
+                name="foundstyles-evergreen" type="theme" />
+  -->
+
+</configure>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <notheme if="not(/html/body/div[@id='visual-portal-wrapper'])"/>
+  <theme href="/++framework++foundation/index.html"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="/++framework++plone/rules/head/base.xml"/>
+  <xi:include href="/++framework++foundation/rules/head/base.xml"/>
+
+  <!-- Body rules
+       ================================================================== -->
+  <xi:include href="/++framework++foundation/rules/body/grid.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/header.xml"/>
+  <xi:include href="/++framework++plone/rules/logo/white-48.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/columns.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/portlets.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/lead.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/content.xml"/>
+  <xi:include href="/++framework++foundation/rules/body/footer.xml"/>
+
+  <!-- Strip edit fixtures -->
+  <xi:include href="/++framework++plone/rules/utility/clean.xml"/>
+
+  <!-- Place the content 
+       .................................................................. -->
+  <xi:include href="/++framework++plone/rules/content.xml"/>
+
+</rules>
