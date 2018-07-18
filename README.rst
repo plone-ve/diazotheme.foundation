@@ -160,25 +160,39 @@ Resources
 This package is the parent of all Plone diazo themes and 
 provides rule that are practical to use in other diazo themes.
 
-The resources of this framework can be reached through
 
-- **Foundation Starter Theme**
+Foundation Starter Theme
+------------------------
+
+The resources of this theme can be reached through
+
     ``/++theme++foundation-starter``
-- **Foundation Example Theme**
-    ``/++theme++foundation``
 
-There are placed at ``diazotheme.foundation/diazotheme/foundation/`` directory 
-with following resources files:
+There are placed at ``diazotheme.foundation/diazotheme/foundation/starter`` 
+directory with following resources files:
 
 ::
 
     _ starter
-      Provides the resources from *Foundation Starter Theme*.
+      Provides the resources from "Foundation Starter Theme".
       _ manifest.cfg
       _ rules.xml
-      
+
+
+Foundation Example Theme
+------------------------
+
+The resources of this theme can be reached through
+
+    ``/++theme++foundation``
+
+There are placed at ``diazotheme.foundation/diazotheme/foundation/theme`` 
+directory with following resources files:
+
+::
+
     _ theme
-      Provides the resources from *Foundation Example Theme*.
+      Provides the resources from "Foundation Example Theme".
       _ manifest.cfg
       _ preview.png
       _ rules.xml
